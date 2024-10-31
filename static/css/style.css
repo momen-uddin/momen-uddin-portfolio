@@ -28,8 +28,22 @@ a {
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #F87A53;
   text-decoration: none;
+}
+
+.contact a{
+  color: #272829;
+  background-color: #F87A53;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transform: translateY(-5px);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact a:hover{
+  background-color: #272829;
+  color: #F87A53;
 }
 
 h1,
@@ -39,6 +53,15 @@ h4,
 h5,
 h6 {
   font-family: 'Playfair Display', serif;
+}
+
+.nav-link a{
+  font-family: 'Playfair Display', serif;
+  padding: 5px 10px;
+}
+
+.img-fluid{
+  mix-blend-mode: multiply;
 }
 
 /* Style for the social media buttons */
