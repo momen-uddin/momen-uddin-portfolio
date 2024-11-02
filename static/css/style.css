@@ -1,11 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -30,20 +22,41 @@ a {
 a:hover {
   color: #F87A53;
   text-decoration: none;
+  border-bottom: 2px solid #F87A53;
 }
 
 .contact a{
-  color: #272829;
-  background-color: #F87A53;
+  width: 30vw;
+  color: #fff;
+  background-color: #be5b3c;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 50px;
   transform: translateY(-5px);
   transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
 }
 
 .contact a:hover{
   background-color: #272829;
-  color: #F87A53;
+  color: #be5b3c;
+  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
+}
+
+.cv a{
+  width: 30vw;
+  color: #fff;
+  background-color: #be5b3c;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transform: translateY(-5px);
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
+}
+
+.cv a:hover{
+  background-color: #272829;
+  color: #be5b3c;
+  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
 }
 
 h1,
@@ -58,33 +71,58 @@ h6 {
 .nav-link a{
   font-family: 'Playfair Display', serif;
   padding: 5px 10px;
+
+}
+
+.home {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-img img{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-img img{
+  width: 250px;
+  height: 350px;
+  margin-left: 30px;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center;
 }
 
 .img-fluid{
   mix-blend-mode: multiply;
 }
 
-/* Style for the social media buttons */
-.social-links {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .social-links a {
-  width: 15vw;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Equal to width for a round shape */
   text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove padding to maintain round shape */
   font-weight: 600;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50%; /* Makes the button round */
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-links a i {
-  margin-right: 10px;
+  margin: 0; /* Center icon within the button */
 }
 
 .social-links a:hover {
@@ -94,55 +132,125 @@ h6 {
 
 /* Customize individual social media icons */
 .social-links .btn-facebook {
-  background-color: #1877f2; /* Facebook blue */
+  background-color: #1877f2;
 }
 
 .social-links .btn-linkedin {
-  background-color: #0077b5; /* LinkedIn blue */
-}
-
-.social-links .btn-instagram {
-  background-color: #e1306c; /* Instagram pink */
+  background-color: #0077b5;
 }
 
 .social-links .btn-github {
-  background-color: #333; /* GitHub dark gray */
+  background-color: #333;
 }
 
 .social-links .btn-email {
-  background-color: #ff6c40; /* Custom email button color */
+  background-color: #ff6c40;
 }
 
 .social-links .btn-phone {
-  background-color: #33cc33; /* Custom phone button color */
-}
-
-.social-links .btn-cv {
-  background-color: #663399; /* Custom CV button color */
-}
-
-
-
-.img-thumbnail {
-  width: 250px;
-  height: 250px;
-}
-
-.social-links-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust minmax width as needed */
-  gap: 10px; /* Adjust the gap between buttons */
-  justify-items: center;
+  background-color: #33cc33;
 }
 
 /* Media query for mobile */
 @media (max-width: 460px) {
-  .social-links-container {
-    grid-template-columns: repeat(2, 2fr);
-  }
-
   .social-links a {
-    width: 40vw;
-
+    width: 40px; /* Adjust size for smaller screens */
+    height: 40px;
   }
 }
+
+/* Particle Background */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind content */
+}
+
+/* Hero Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-content h1,
+.home-content p {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Skills Section */
+.skills-section {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin-top: 40px !important;
+  font-family: Arial, sans-serif;
+}
+
+.skills-section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills-section h2 span {
+  color: #be5b3c; /* Highlight color */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  z-index: 1; /* Ensure content appears on top of background */
+}
+
+/* Adding a blurred background to the entire grid */
+.skills-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 12px; /* Rounded corners like the image */
+  z-index: -1; /* Place the background behind the content */
+}
+
+.skill-card {
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card i {
+  font-size: 2.5em;
+  color: #00e0ff;
+}
+
+.skill-card p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background-color: #292929;
+}
+

@@ -39,58 +39,193 @@
 
         <div class="nav-link">
           <a href="#home">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
+          <a href="#about">About</a>
+          <a href="#skill">Skills</a>
           <a href="#">Projects</a>
         </div>
       </div>
     </nav>
 
-    <!-- home sections -->
+  <!-- Home Section -->
+  <div class="home" id="home">
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
 
-    <div class="home" id="home" style="background-color: #fefae0">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md-6 mt-2 d-flex align-items-center"
-          >
-            <div class="home-content">
-              <h1 class="text-dark">Hi, I'm Momen Uddin!</h1>
-              <p class="text-dark text" style="text-align:justify;">
-                <span
-                  >🌐 Web Developer | Python Enthusiast | App Developer </span
-                ><br />
-                I’m a passionate developer who loves creating dynamic and
-                user-friendly web applications, diving into Python projects, and
-                exploring mobile app development. I strive to continuously learn
-                and improve my coding skills while contributing to exciting
-                open-source projects.
-              </p>
+    <!-- Hero Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="home-content">
+            <h1 class="text-dark">Hi There,<br>
+              I'm Momen <span style="color: #F87A53;">Uddin</span></h1>
+            <p class="text-dark text" style="text-align: justify;">
+              <span>🌐 Web Developer | Python Enthusiast | App Developer</span>
+            </p>
+            <div class="contact mt-5">
+              <a href="#about">About Me <i class="bi bi-arrow-down-circle-fill"></i></a>
+            </div>
 
-              <div class="contact">
-                <a href="#"
-                  >Learn More</a
-                >
+            <!-- Social Links -->
+            <div class="social-links mt-5 text-center">
+              <div class="social-links-container">
+                <a href="https://www.fb.com/momen.stareye" class="btn btn-facebook" target="_blank">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/momen-uddin/" class="btn btn-linkedin" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/momen-uddin" class="btn btn-github" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="mailto:momenuddin@outlook.com" class="btn btn-email" target="_blank">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </a>
+                <a href="tel:+8801841987704" class="btn btn-phone" target="_blank">
+                  <i class="bi bi-telephone-fill"></i>
+                </a>
               </div>
-
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="home-img">
-              <img
-                src="../static/img/profile-img.jpg"
-                alt="home-img"
-                class="img-fluid"
-              />
-            </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="col-md-6 d-flex justify-content-center align-content-center">
+          <div class="home-img">
+            <img src="../static/img/hero.png" alt="home-img" class="img-fluid" />
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+    <!-- About section -->
+
+    <div class="about mt-3 mb-3" id="about" style="background-color: #fef9f2; height: 100vh;">
+
+      <div class="mt-2 mb-2" style="text-align: center;">
+        <h1 class="text-dark">About <span style="color: #F87A53;">Me</span></h1>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-img">
+              <img
+                src="../static/img/profile-img.jpg"
+                alt="about-img"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-3 d-flex align-items-center">
+            <div class="about-content">
+              <h3>I'm Momen Udddin</h3>
+              <span>Full Stack Web Developer</span><br><br>
+
+              <p class="text-dark text" style="text-align:justify;">
+                I am a self-taught web developer with a passion for creating
+                dynamic and user-friendly web applications. I have experience
+                working with HTML, CSS, JavaScript, and Python. I am also
+                familiar with Django, Flask, and React. I am always eager to
+                learn new technologies and improve my coding skills.
+              </p>
+              <p><span style="color: #F87A53;">Email : </span>momenuddin@outlook.com</p>
+              <p><span style="color: #F87A53;">Place : </span>Dhaka, Bangladesh</p><br>
+
+              <div class="cv">
+                <a href="#">Resume <i class="bi bi-filetype-pdf"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill section -->
+
+      <div class="skills-section mt-2" id="skill">
+        <h2><i class="bi bi-laptop-code"></i> Skills <span>& Abilities</span></h2>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <img src="../static/img/python.png" width="90%" alt="">
+            <p>Python</p>
+          </div>
+          <div class="skill-card">
+            <img src="../static/img/flask.png" width="90%" alt="">
+            <p>Flask</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/php.png" width="90%" alt="">
+            <p>PHP</p>
+          </div>
+          <div class="skill-card">
+            <img src="../static/img/laravel.png" width="90%" alt="">
+            <p>Laravel</p>
+          </div>
+          <div class="skill-card">
+            <img src="../static/img/javascript.png" width="90%" alt="">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="../static/img/mysql.png" width="90%" alt="">
+            <p>MySQL</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/html.png" width="90%" alt="">
+            <p>HTML5</p>
+          </div>
+          <div class="skill-card">
+            <img src="../static/img/css.png" width="90%" alt="">
+            <p>CSS3</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/bootstrap.png" width="90%" alt="">
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-card">
+            <img src="../static/img/sass.png" width="90%" alt="">
+            <p>Sass</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/tailwind.png" width="90%" alt="">
+            <p>TailwindCSS</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/github.png" width="90%" alt="">
+            <p>GitHub</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/wordpress.png" width="90%" alt="">
+            <p>WordPress</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/hostinger.png" width="90%" alt="">
+            <p>Hostinger</p>
+          </div>
+
+          <div class="skill-card">
+            <img src="../static/img/namecheap.png" width="90%" alt="">
+            <p>NameCheap</p>
+          </div>
+
+        </div>
+      </div>
+      
 
     <!-- Vendor JS Files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="../static/js/particles.js"></script>
+    
 
     <script>
       $(document).ready(function () {
@@ -103,6 +238,8 @@
         });
       });
     </script>
+    
+    
   </body>
 
   <!-- Created by MD. Momen Uddin -->
