@@ -221,7 +221,7 @@
       
 
       <!-- get in touch -->
-      <div class="contactMe">
+      <div class="contactMe" id="contactMe">
 
      
       <section class="get-in-touch">
@@ -231,22 +231,22 @@
             <img src="../static/img/cs.png" alt="Customer Service Illustration">
           </div>
           <div class="contact-form">
-            <form>
+            <form method="POST" action="/contact">
               <div class="form-group">
                 <i class="bi bi-person"></i>
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Name" name="name" required>
               </div>
               <div class="form-group">
                 <i class="bi bi-envelope"></i>
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Email" name="email" required>
               </div>
               <div class="form-group">
                 <i class="bi bi-telephone"></i>
-                <input type="tel" placeholder="Phone" required>
+                <input type="tel" placeholder="Phone" name="phone" required>
               </div>
               <div class="form-group">
                 <i class="bi bi-chat-dots-fill"></i>
-                <textarea placeholder="Message" required></textarea>
+                <textarea placeholder="Message" name="msg" required></textarea>
               </div>
               <button type="submit">Submit <i class="fas fa-paper-plane"></i></button>
             </form>
