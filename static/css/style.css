@@ -2,17 +2,12 @@
 # General
 --------------------------------------------------------------*/
 
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@600&family=Playfair+Display:wght@600&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Foldit:wght@600&display=swap');
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif, Arial, sans-serif;
   color: #272829;
 }
-
 
 a {
   color: #fff;
@@ -25,7 +20,8 @@ a:hover {
   border-bottom: 2px solid #F87A53;
 }
 
-.contact a{
+.contact a,
+.cv a {
   width: 30vw;
   color: #fff;
   background-color: #be5b3c;
@@ -36,42 +32,19 @@ a:hover {
   box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
 }
 
-.contact a:hover{
+.contact a:hover,
+.cv a:hover {
   background-color: #272829;
   color: #be5b3c;
-  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
 }
 
-.cv a{
-  width: 30vw;
-  color: #fff;
-  background-color: #be5b3c;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transform: translateY(-5px);
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif, Arial, sans-serif;
 }
 
-.cv a:hover{
-  background-color: #272829;
-  color: #be5b3c;
-  box-shadow: 0px 5px 18px rgba(190, 91, 60, 0.6);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Playfair Display', serif;
-}
-
-.nav-link a{
+.nav-link a {
   font-family: 'Playfair Display', serif;
   padding: 5px 10px;
-
 }
 
 .home {
@@ -83,7 +56,7 @@ h6 {
   justify-content: center;
 }
 
-.home-img img{
+.home-img img {
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -92,7 +65,7 @@ h6 {
   object-position: center;
 }
 
-.about-img img{
+.about-img img {
   width: 250px;
   height: 350px;
   margin-left: 30px;
@@ -102,35 +75,34 @@ h6 {
   object-position: center;
 }
 
-.img-fluid{
+.img-fluid {
   mix-blend-mode: multiply;
 }
 
 .social-links a {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Equal to width for a round shape */
+  width: 40px;
+  height: 40px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0; /* Remove padding to maintain round shape */
+  padding: 0;
   font-weight: 600;
   color: #fff;
-  border-radius: 50%; /* Makes the button round */
+  border-radius: 50%;
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-links a i {
-  margin: 0; /* Center icon within the button */
+  margin: 0;
 }
 
 .social-links a:hover {
-  background-color: #bfc0c2; /* Change the background color on hover */
-  transform: translateY(-3px);
+  background-color: #bfc0c2;
+  transform: scale(1.1) translateY(-3px);
 }
 
-/* Customize individual social media icons */
 .social-links .btn-facebook {
   background-color: #1877f2;
 }
@@ -154,7 +126,7 @@ h6 {
 /* Media query for mobile */
 @media (max-width: 460px) {
   .social-links a {
-    width: 40px; /* Adjust size for smaller screens */
+    width: 40px;
     height: 40px;
   }
 }
@@ -164,8 +136,10 @@ h6 {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Behind content */
+  z-index: -1;
 }
+
+
 
 /* Hero Animations */
 @keyframes fadeInUp {
@@ -201,7 +175,7 @@ h6 {
 }
 
 .skills-section h2 span {
-  color: #be5b3c; /* Highlight color */
+  color: #be5b3c;
 }
 
 .skills-grid {
@@ -212,10 +186,9 @@ h6 {
   margin: 0 auto;
   position: relative;
   padding: 20px;
-  z-index: 1; /* Ensure content appears on top of background */
+  z-index: 1;
 }
 
-/* Adding a blurred background to the entire grid */
 .skills-grid::before {
   content: "";
   position: absolute;
@@ -223,10 +196,10 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-radius: 12px; /* Rounded corners like the image */
-  z-index: -1; /* Place the background behind the content */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  z-index: -1;
 }
 
 .skill-card {
@@ -254,3 +227,28 @@ h6 {
   background-color: #292929;
 }
 
+/* Responsive Font Scaling */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+  }
+  .skills-section h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Mobile Adjustments for Skills Grid */
+@media (max-width: 460px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Adjust Profile Image on Smaller Screens */
+@media (max-width: 768px) {
+  .home-img img {
+    width: 250px;
+    height: 250px;
+  }
+}
