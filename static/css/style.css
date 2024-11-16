@@ -21,7 +21,7 @@ a:hover {
 }
 
 .contact a,
-.cv a {
+.cv a, .contact button {
   width: 30vw;
   color: #fff;
   background-color: #be5b3c;
@@ -73,6 +73,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   object-fit: cover;
   object-position: center;
+  filter: grayscale(80%); /* Make the image black and white */
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.about-img img:hover {
+  filter: grayscale(0%); /* Restore color on hover */
 }
 
 .img-fluid {
@@ -98,29 +104,34 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.social-links a:hover {
-  background-color: #bfc0c2;
+.social-links a {
+  background-color: #272829;
+  /* transform: scale(1.1) translateY(-3px); */
+}
+
+.social-links .btn-facebook:hover {
+  background-color: #1877f2;
   transform: scale(1.1) translateY(-3px);
 }
 
-.social-links .btn-facebook {
-  background-color: #1877f2;
-}
-
-.social-links .btn-linkedin {
+.social-links .btn-linkedin:hover {
   background-color: #0077b5;
+  transform: scale(1.1) translateY(-3px);
 }
 
-.social-links .btn-github {
+.social-links .btn-github:hover {
   background-color: #333;
+  transform: scale(1.1) translateY(-3px);
 }
 
-.social-links .btn-email {
+.social-links .btn-email:hover {
   background-color: #ff6c40;
+  transform: scale(1.1) translateY(-3px);
 }
 
-.social-links .btn-phone {
+.social-links .btn-phone:hover {
   background-color: #33cc33;
+  transform: scale(1.1) translateY(-3px);
 }
 
 /* Media query for mobile */
