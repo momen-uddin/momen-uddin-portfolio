@@ -1,5 +1,9 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request, url_for, redirect, flash
+import secrets
 app = Flask(__name__)
+
+secret_key = secrets.token_hex(16)
+app.secret_key = secret_key
 
 @app.route("/")
 def index():
@@ -13,7 +17,9 @@ def contact():
         clientPhone = request.form['phone']
         clientMsg = request.form['msg']
         
+        flash("Your message has been sent successfully!", "success")
         return render_template("index.html")
+
     return render_template("index.html")
 
 

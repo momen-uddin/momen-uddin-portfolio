@@ -9,6 +9,13 @@ body {
   color: #272829;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999999999; /* Ensure it's on top of other elements */
+  }
+  
+
 a {
   color: #fff;
   text-decoration: none;
@@ -175,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding: 40px;
   text-align: center;
-  margin-top: 40px !important;
+  
   font-family: Arial, sans-serif;
 }
 
@@ -367,4 +374,41 @@ button:hover {
   .contact-container {
     flex-direction: column;
   }
+}
+
+/* 
+    Education and experience
+*/
+
+.timeline {
+  position: relative;
+  border-left: 2px solid #F87A53; /* Timeline line color */
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 10px 0;
+  margin-left: 40px;
+}
+
+.timeline-item .icon {
+  position: absolute;
+  top: 0;
+  left: -5dvw;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid #F87A53;
+}
+
+.timeline-item h5 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  margin-bottom: 0.5rem;
 }
