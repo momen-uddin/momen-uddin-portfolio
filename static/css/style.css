@@ -21,11 +21,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #F87A53;
-  text-decoration: none;
-  border-bottom: 2px solid #F87A53;
-}
+
 
 .contact a,
 .cv a, .contact button {
@@ -49,9 +45,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif, Arial, sans-serif;
 }
 
+.navbar {
+  z-index: 999;
+}
+
 .nav-link a {
   font-family: 'Playfair Display', serif;
   padding: 5px 10px;
+}
+
+.nav-link:hover {
+  color: #F87A53;
+  text-decoration: none;
+  border-bottom: 2px solid #F87A53;
 }
 
 .home {
@@ -180,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 .skills-section {
   background: linear-gradient(135deg, #4a00e0, #8e2de2);
   color: #fff;
+  padding-top: 70px !important;
   padding: 40px;
   text-align: center;
   
