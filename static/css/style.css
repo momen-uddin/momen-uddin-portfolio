@@ -47,9 +47,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
   z-index: 999;
+  /* height: 60px; */
 }
 
-.nav-link a {
+.nav-link {
   font-family: 'Playfair Display', serif;
   padding: 5px 10px;
 }
@@ -59,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   border-bottom: 2px solid #F87A53;
 }
+
 
 .home {
   color: #fff;

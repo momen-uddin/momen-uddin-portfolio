@@ -32,30 +32,38 @@
 
   <body style="background: #fef9f2">
 
-<!-- Navbar Start -->
-<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark ">
-  <div class="container-fluid d-flex align-items-center">
-    <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <img src="../static/img/it.png" width="10%" class="me-2" alt="Logo" />
-      <h3 class="mb-0 text-white">Momen</h3>
-    </a>
-    <!-- Toggler Button -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible Menu -->
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto">
-        <a href="#home" class="nav-item nav-link text-white">Home</a>
-        <a href="#about" class="nav-item nav-link text-white">About</a>
-        <a href="#qualification" class="nav-item nav-link text-white">Quality</a>
-        <a href="#skill" class="nav-item nav-link text-white">Skill</a>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a href="#home" class="navbar-brand text-white d-flex align-items-center">
+          <!-- <img src="../static/img/it.png" width="5%" class="me-2" alt="Logo" /> -->
+          <h4 class="mb-0">Momen <span style="color: #F87A53;">Uddin</span></h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#home" class="nav-link ">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#qualification" class="nav-link">Quality</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skill" class="nav-link">Skill</a>
+            </li>
+            
+          </ul>
+  
+        </div>
       </div>
-    </div>
-  </div>
-</nav>
-<!-- Navbar End -->
+    </nav>
+  <!-- Navbar End -->
+
 
   <!-- Home Section -->
   <div class="home" id="home">
@@ -391,6 +399,21 @@
         });
       });
     </script>
+
+    <script>
+      // Store the original page title
+      const originalTitle = document.title;
+    
+      // Detect when the tab loses focus
+      document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+          document.title = "Please Come Back!";
+        } else {
+          document.title = originalTitle; // Restore the original title when they return
+        }
+      });
+    </script>
+    
     
     
   </body>
